@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { NavLink as Link } from "react-router-dom"
-import { FaBars } from "react-icons/fa"
 
 export const Nav = styled.nav`
     background: black;
@@ -12,6 +11,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
+    
     color: white;
     display: flex;
     align-items: center;
@@ -21,24 +21,12 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
+        background-image: url('/public/images/rocket1.png');
         color: yellow;
     }
 `
 
-export const Bars = styled(FaBars)`
-    display: none;
-    color: black;
 
-    @media screen and (max-width: 768ox) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: tranlate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-`
 
 export const NavMenu = styled.div`
     display: flex;

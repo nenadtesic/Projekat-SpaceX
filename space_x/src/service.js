@@ -8,14 +8,12 @@ const VERSION = "v4"
 const LAUNCHES = "launches"
 const ROCKETS = "rockets"
 
-export const getAllLaunches = () => {
-    return axios.get(`${BASE}/${VERSION}/${LAUNCHES}`)
-}
+export const getAllLaunches = () => axios.get(`${BASE}/${VERSION}/${LAUNCHES}`)
 
-export const getRocketById = (id) => {
-    return axios.get(`${BASE}/${VERSION}/${ROCKETS}/${id}`)
-} 
+export const getRocketById = (id) => axios.get(`${BASE}/${VERSION}/${ROCKETS}/${id}`)
 
-export const getAllRockets = () => {
-    return axios.get(`${BASE}/${VERSION}/${ROCKETS}`)
-}
+export const getAllRockets = () => axios.get(`${BASE}/${VERSION}/${ROCKETS}`)
+
+export const getAllUsers = () => axios.get(`http://localhost:3005/users`)
+
+export const postUser = (username,email,password) => axios.post(`http://localhost:3005/users`,{username,email,password})
