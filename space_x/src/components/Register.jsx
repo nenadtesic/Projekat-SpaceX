@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router";
 import { getAllUsers, postUser } from "../service";
+import StyledRegister from "./StyledRegister";
 
 
 const Register = ({setUser}) => {
@@ -14,7 +15,7 @@ const Register = ({setUser}) => {
                                     && password.split('').some(char => !isNaN(Number(char)))
 
     return ( 
-        <>
+        <StyledRegister>
             <form onSubmit={(e)=>{
                 e.preventDefault()
                 if(username.length < 4 && !validPassword(password)){
@@ -25,18 +26,17 @@ const Register = ({setUser}) => {
                     if(!res.data.some(user => user.username === username || user.email === email)){
                         postUser(username,email,password).then(res => {
                             setUser(res.data)
-                            history.push('/')
+                            history.push('/rockets')
                         })
                     }
                 })
-                
             }}>
                 <input type="text"  placeholder="Username..." onChange={(e)=>{setUsername(e.target.value)}}/>
                 <input type="email"  placeholder="Email..." onChange={(e)=>{setEmail(e.target.value)}}/>
                 <input type="password" placeholder="Password..." onChange={(e)=>{setPassword(e.target.value)}} />
                 <input type="submit" value="Register" />
             </form>
-        </>
+        </StyledRegister>
      );
 }
  

@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { getRocketById } from "../service";
 
-const Launch = ({launch, votes}) => {
+const Launch = ({launch, votes, loggedIn}) => {
     const [rocket, setRocket] = useState(null)
-    let date = new Date(launch.static_fire_date_unix * 1000) 
-    
+
     return (
         <div onClick={() => {
               getRocketById(launch.rocket).then(res => {
@@ -17,9 +16,6 @@ const Launch = ({launch, votes}) => {
             <button onClick={()=>{
                 
             }}>+</button>
-            <p>{date.toDateString()}</p>
-            <p>{rocket?.name}</p>
-            <p>{rocket ? rocket.active ? 'active' : 'not active' : ''}</p>
         </div>
     );
 }

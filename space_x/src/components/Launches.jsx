@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { getAllLaunches } from "../service";
 import Launch from "./Launch";
 
-const Launches = ({votes, setVotes}) => {
-    const [launches, setLaunches] = useState([])
+const Launches = ({votes, setVotes, launches, setLaunches}) => {
 
     useEffect(()=>{
         getAllLaunches().then(res => {
@@ -15,7 +14,7 @@ const Launches = ({votes, setVotes}) => {
     }, [votes])
 
     return (
-        <div>
+        <div className="launches">
             {launches.map(launch => <Launch key={launch.id} launch={launch} votes={votes?.find(el => el.id === launch.id)?.count}/>)}
         </div>
     );

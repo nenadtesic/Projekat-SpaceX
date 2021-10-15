@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "username": "Ana",
-      "email": "Ana@gmail.com",
-      "password": "Ana1",
-      "id": 1
+      "username": "Aleksa",
+      "email": "aleksa@gmail.com",
+      "password": "Aleksa1",
+      "id": 3
     },
     {
-      "username": "Ena",
-      "email": "Ena@gmail.com",
-      "password": "Ena1",
-      "id": 2
+      "username": "Zivojin",
+      "email": "zivko@gmail.com",
+      "password": "Zivko1",
+      "id": 4
     }
   ]
 }

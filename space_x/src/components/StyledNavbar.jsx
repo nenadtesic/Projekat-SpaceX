@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { NavLink as Link } from "react-router-dom"
 
 export const Nav = styled.nav`
+   
     background: black;
     height: 80px;
     display: flex;
@@ -21,11 +22,9 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-        background-image: url('/public/images/rocket1.png');
         color: yellow;
     }
 `
-
 
 
 export const NavMenu = styled.div`
@@ -49,9 +48,9 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled(Link)`
     border-radius: 4px;
-    background: #256ce1;
+    background: #E5DCC3;
     padding: 10px 22px;
-    color: #fff;
+    color: #000;
     border: none;
     outline: none;
     cursor: pointer;

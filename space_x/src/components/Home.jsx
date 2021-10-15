@@ -1,13 +1,8 @@
+import { Redirect } from "react-router";
 
 
-const Home = () => {
-    
-    return (
-        <div style={{backgroundImage: `url(process.env.PUBLIC_URL + '/images/rocket1.png}')`}}>
-           
-            <h1>Home</h1>
-        </div>
-    );
+const Home = ({loggedIn}) => {
+    return loggedIn ? <Redirect to="/rockets"/> : <Redirect to="/login"/>
 }
  
 export default Home;

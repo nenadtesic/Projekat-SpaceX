@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getAllRockets } from "../service";
 import Rocket from "./Rocket";
+import RocketsStyle from "./RocketsStyle";
 
 const Rockets= () => {
     const [rockets,setRockets] = useState([])
@@ -13,9 +14,9 @@ const Rockets= () => {
     },[])
 
     return (
-        <div>
+        <RocketsStyle>
             <div>{rockets.map(rocket => <Rocket key={rocket.id} rocket={rocket}/> )} </div>
-        </div>
+        </RocketsStyle>
     );
 }
  
