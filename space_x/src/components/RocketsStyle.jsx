@@ -2,23 +2,21 @@ import styled from "styled-components"
 
 const RocketsStyle = styled.div`
 box-sizing: border-box;
-background-color: red;
-display: flex;
-justify-content: space-between;
 
 > div {
-    width: 700px;
-    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    // width: 200px;
-    background-color: #D1E1E4;
+    > div {
+        display: flex;
+        justify-content: center;
+        aligh-items: center;
+    }
     p {
         text-align: center;
-        color: red;
+        color: white;
         font-size: 30px;
-    }
-    img {
-        width: 100%;
     }
 }
 

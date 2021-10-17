@@ -1,16 +1,25 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const StyledRegister = styled.div`
+export const StyledLogin = styled.div`
     position: absolute;
     top: 30%;
     right: 50%;
     transform: translateX(50%);
-    box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+> div {
+    color: red;
+}
 
-input[type=text], input[type=email], input[type=password] {
+#notReg {
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+input[type=text], input[type=password] {
     text-align: center;
     width: 400px;
     height: 60px;
@@ -22,8 +31,8 @@ input[type=text], input[type=email], input[type=password] {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-
 }
+
 
 input[type=submit] {
     position: relative;
@@ -38,14 +47,12 @@ input[type=submit] {
     position: relative;
     top: 50%;
     cursor: pointer;
-    
+
     &:hover{
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010686;
     }
 }
-
 `
 
-export default StyledRegister
