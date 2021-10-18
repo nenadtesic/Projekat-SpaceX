@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/front-spacex/static/js/main.13c0c74f.chunk.js",
+    "main.js.map": "/front-spacex/static/js/main.13c0c74f.chunk.js.map",
+    "runtime-main.js": "/front-spacex/static/js/runtime-main.af77411a.js",
+    "runtime-main.js.map": "/front-spacex/static/js/runtime-main.af77411a.js.map",
+    "static/js/2.35d2a71e.chunk.js": "/front-spacex/static/js/2.35d2a71e.chunk.js",
+    "static/js/2.35d2a71e.chunk.js.map": "/front-spacex/static/js/2.35d2a71e.chunk.js.map",
+    "index.html": "/front-spacex/index.html",
+    "static/js/2.35d2a71e.chunk.js.LICENSE.txt": "/front-spacex/static/js/2.35d2a71e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af77411a.js",
+    "static/js/2.35d2a71e.chunk.js",
+    "static/js/main.13c0c74f.chunk.js"
+  ]
+}
