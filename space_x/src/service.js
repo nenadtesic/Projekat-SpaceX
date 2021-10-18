@@ -14,9 +14,9 @@ export const getRocketById = (id) => axios.get(`${BASE}/${VERSION}/${ROCKETS}/${
 
 export const getAllRockets = () => axios.get(`${BASE}/${VERSION}/${ROCKETS}`)
 
-export const getAllUsers = () => axios.get(`http://localhost:3005/users`)
+export const getAllUsers = () => axios.get(`https://my-spacex-project.herokuapp.com/users`)
 
-export const postUser = (username, email, password) => axios.post(`http://localhost:3005/users`, { username, email, password })
+export const postUser = (username, email, password) => axios.post(`https://my-spacex-project.herokuapp.com/users`, { username, email, password })
 
 // export const getVotes = () => axios.get(`http://localhost:3005/voteCount`)
 // export const postVotes = (id, count) => axios.post(`http://localhost:3005/voteCount`, { id, count })
